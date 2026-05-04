@@ -1,0 +1,51 @@
+\documentclass[a4paper]{article}
+% You can change the parameters: here are the available options:
+% - a4paper
+% - fancysections
+% - notitlepage ou titlepage
+% - onside ou twoside
+% - sectionmark
+% - chaptermark (for books and reports
+% - pagenumber
+% - enmanquedinspiration (lacking inspiration)
+\usepackage[a4paper,  fancysections,  titlepage]{pdfEPUSP}
+\usepackage[portuguese]{babel}
+\usepackage[hidelinks]{hyperref}
+\usepackage[alf]{abntex2cite}
+
+\usepackage{lipsum}
+
+\author{AUTOR(ES) DO RELATÓRIO}
+\date{\today}
+\title{TÍTULO DO RELATÓRIO}
+\subtitle{SUBTÍTULO DO RELATÓRIO}
+
+%To add a logo, add the image in PDF of any other common format
+% If you don't want an image, keep \logo{} line commented
+%\logo{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{PRIMEIRA SEÇÃO}
+
+\lipsum
+
+\section{SEGUNDA SEÇÃO}
+
+\lipsum
+
+\section{TERCEIRA SEÇÃO}
+
+\lipsum
+
+\newpage
+\bibliographystyle{abntex2-alf}
+\bibliography{refs}
+
+\end{document}
